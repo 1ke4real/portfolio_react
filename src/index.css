@@ -6,3 +6,25 @@ body{
     background-color: #000000;
     color: #eeeeee;
 }
+.card {
+    background: #1A1A1A;
+    box-shadow:  27px 27px 54px #141414,
+    -27px -27px 54px #202020;
+}
+.button {
+    background: #3B82F6;
+    box-shadow:  10px 10px 30px #326fd1,
+    -10px -10px 30px #4496ff;
+    position: relative;
+    z-index: 0;
+}
+.button:hover {
+    background: #2563EB;
+    box-shadow:  10px 10px 30px #1e4bbf,
+    -10px -10px 30px #3a83ff;
+    z-index: 1;
+}
+.top{
+    position: relative;
+    z-index: 99999;
+}
