@@ -1,0 +1,12 @@
+{
+  "title": "Pokédex",
+  "techno": [
+    "React",
+    "Tailwind CSS",
+    "PokeAPI"
+  ],
+  "description": "Il s'agit d'un projet pédagogique ayant pour objectif la manipulation d'une API avec React. Le Pokédex est une application web qui permet d'explorer et de rechercher des informations sur les Pokémon. J'ai utilisé React pour la création de l'interface utilisateur, intégré le framework CSS Tailwind CSS pour le style et tiré parti de l'API PokeAPI pour obtenir les données Pokémon.",
+  "image": "chemin/vers/image.jpg",
+  "github": "lien-vers-repo-github",
+  "demo": "lien-vers-demo-en-ligne"
+}
