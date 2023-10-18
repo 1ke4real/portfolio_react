@@ -1,0 +1,12 @@
+{
+  "title": "Explorateur de Films TMDb",
+  "techno": [
+    "React",
+    "Material UI",
+    "The Movie Database API (TMDb)",
+    "CSS personnalisé"
+  ],
+  "description": "L'Explorateur de Films TMDb est un projet qui me permet d'explorer les données cinématographiques en utilisant l'API de The Movie Database (TMDb). J'ai conçu cette application pour afficher des informations détaillées sur les films, y compris les titres, les affiches, les résumés. Le développement a été réalisé en utilisant React pour la création de l'interface utilisateur. J'ai également personnalisé le style en utilisant Material UI.",
+  "github": "lien-vers-repo-github",
+  "demo": "lien-vers-demo-en-ligne"
+}
