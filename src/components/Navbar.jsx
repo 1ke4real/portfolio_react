@@ -5,10 +5,16 @@ export const Navbar = () => {
     const handleMenu = () => {
         setMenu(!menu)
     }
+    const handleLink = () => {
+        setMenu(false)
+    }
     return (
         <>
-            <div className="flex justify-end">
-                <button className="bg-[#262626] p-3 rounded m-2 z-999" onClick={handleMenu}>
+            <div className="flex justify-end f">
+                <button
+                    className="bg-[#262626] p-3 rounded m-2 habmenu fixed top-0 right-0 focus:outline-none focus:bg-gray-700"
+                    onClick={handleMenu}
+                >
                     <div className="space-y-2">
                         <div className="w-6 h-0.5 bg-gray-200"></div>
                         <div className="w-6 h-0.5 bg-gray-200"></div>
@@ -16,14 +22,28 @@ export const Navbar = () => {
                     </div>
                 </button>
             </div>
-            {menu && <div className="bg-[#262626] fixed w-[100%] px-2 h-screen navMenu">
-                <ul className="uppercase flex flex-col gap-32 p-10 text-xl">
-                    <li>acceuil </li>
-                    <li>a propos</li>
-                    <li>projets</li>
-                    <li>contact</li>
+            <div
+                className={`bg-[#262626] navMenu fixed top-0 left-0 w-64 h-screen py-6 px-4 shadow-lg transform transition-transform ${
+                    menu ? 'translate-x-0' : '-translate-x-full'
+                }`}
+            >
+                <ul className="uppercase flex flex-col gap-10 text-xl font-bold">
+                    <li >
+                        <a href="#" className="transition-all hover:text-blue-500 hover:underline focus:outline-none focus:text-blue-500 focus:underline" onClick={handleLink}>Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#about" className="transition-all hover:text-blue-500 hover:underline focus:outline-none focus:text-blue-500 focus:underline" onClick={handleLink}>À propos</a>
+                    </li>
+                    <li>
+                        <a href="#" className="transition-all hover:text-blue-500 hover:underline focus:outline-none focus:text-blue-500 focus:underline" onClick={handleLink}>Projets</a>
+                    </li>
+                    <li>
+                        <a href="#" className="transition-all hover:text-blue-500 hover:underline focus:outline-none focus:text-blue-500 focus:underline" onClick={handleLink}>Contact</a>
+                    </li>
                 </ul>
-            </div>}
+            </div>
         </>
+
+
     )
 }

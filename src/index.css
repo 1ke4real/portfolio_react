@@ -25,5 +25,14 @@ body{
     z-index: 1;
 }
 .navMenu{
-    z-index: 99999;
+    z-index: 999;
 }
+.habmenu{
+    z-index: 999;
+}
+.link-mobile:focus{
+    background-color: #3B82F6;
+    color: #ffffff;
+}
+
+
