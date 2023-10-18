@@ -7,7 +7,7 @@ export const Home = () => {
 
     return (
         <>
-            <div className="flex flex-col place-content-center items-center h-screen gap-10 -mt-4">
+            <div className="flex flex-col place-content-center items-center h-screen gap-10 -mt-4" id="home">
                 <div className="flex flex-col gap-5 rounded-lg items-center justify-center">
                     <img src={profile} alt="profil" width={200} height={200}
                          className="rounded-full object-cover  mx-8"/>
