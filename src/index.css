@@ -16,7 +16,7 @@ body{
     box-shadow:  10px 10px 30px #326fd1,
     -10px -10px 30px #4496ff;
     position: relative;
-    z-index: 0;
+    z-index: -10;
 }
 .button:hover {
     background: #2563EB;

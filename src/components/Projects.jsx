@@ -24,35 +24,23 @@ export const Projects = () => {
 
     console.log(projects);
     return (
-        <div className="p-5">
+        <div className="p-3">
             <h1 className="uppercase text-3xl font-bold my-2 mb-5">Projets</h1>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap gap-4">
                 {projects.map((project, key) => (
-                    <div key={key} className="mb-5 flex flex-col gap-4">
-                        <div className="flex items-center gap-4">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth={1.5}
-                                stroke="currentColor"
-                                className="w-6 h-6"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
-                                />
-                            </svg>
-                            <h1 className="text-2xl font-bold">{project.name}</h1>
-                        </div>
-                        <p>{project.description}</p>
-                        <div className="flex gap-4 font-light">
+                    <div key={key} className="mb-5 flex flex-col gap-4 bg-[#1A1A1A] p-3">
+                        <h1 className="text-2xl font-bold">{project.name}</h1>
+                        <p className="leading-relaxed">{project.description}</p>
+                        <div className="flex gap-4 font-light ">
                             <p>{project.language}</p>
                             <p>{project.size} MB</p>
                         </div>
                     </div>
                 ))}
+                <button className="button py-3  w-full text-2xl rounded-lg font-bold">
+                    <a href="https://github.com/1ke4real">Voir plus</a>
+                </button>
+
             </div>
         </div>
     );
