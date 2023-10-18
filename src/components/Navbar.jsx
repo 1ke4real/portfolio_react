@@ -1,5 +1,4 @@
 import {useState} from "react";
-import {Bars3BottomRightIcon, BookOpenIcon, XMarkIcon} from "@heroicons/react/20/solid/index.js";
 
 export const Navbar = () => {
     let Links = [
