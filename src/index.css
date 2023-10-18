@@ -24,7 +24,6 @@ body{
     -10px -10px 30px #3a83ff;
     z-index: 1;
 }
-.top{
-    position: relative;
+.navMenu{
     z-index: 99999;
 }
