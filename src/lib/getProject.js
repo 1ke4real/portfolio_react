@@ -3,7 +3,7 @@ export const getProject = async () => {
     const files = ["pokedex.json", "filmReact.json", "filmNative.json"]
     for (const file of files) {
         try {
-            const fileContent = await fetch(`./src/projects/${file}`, {
+            const fileContent = await fetch(`./projects/${file}`, {
                 headers: {
                     "Content-Type": "application/json",
                 }
