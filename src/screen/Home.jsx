@@ -1,6 +1,6 @@
 import {getProject} from "../lib/getProject.js";
 import {useEffect, useState} from "react";
-import profile from "../assets/images/profil.jpg"
+import profile from "../assets/images/profil.png"
 
 
 export const Home = () => {
