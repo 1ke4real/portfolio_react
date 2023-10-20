@@ -7,8 +7,9 @@ export const Navbar = () => {
     let Links = [
         {name: "ACCEUIL", link: "#home"},
         {name: "A PROPOS", link: "#about"},
-        {name: "PROJETS", link: "/"},
-        {name: "CONTACT", link: "/"},
+        {name: "PROJETS", link: "#projects"},
+        {name: "COMPETENCES", link: "#skills"},
+        {name: "CONTACT", link: "#contact"},
     ];
     let [open, setOpen] = useState(false);
 

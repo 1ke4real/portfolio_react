@@ -27,11 +27,11 @@ export const Projects = () => {
 
     console.log(projects);
     return (
-        <div className="p-3">
-            <h1 className="uppercase text-3xl font-bold my-2 mb-5">Projets</h1>
-            <div className="flex flex-wrap gap-4">
+        <div className="p-5 py-8 mb-8 lg:p-16" id="projects">
+            <h1 className="uppercase text-3xl font-bold my-2 mb-5 lg:text-5xl ">Projets</h1>
+            <div className="flex flex-wrap gap-4 lg:flex-nowrap lg:space-x-4">
                 {projects.map((project, key) => (
-                    <div key={key} className="mb-5 flex flex-col gap-4 bg-[#1A1A1A] p-3">
+                    <div key={key} className="mb-5 flex flex-col gap-4 bg-[#1A1A1A] p-3 lg:w-1/4">
                         <h1 className="text-2xl font-bold">{project.name}</h1>
                         <p className="leading-loose">{project.description}</p>
                         <div className="flex gap-4 font-light ">
@@ -40,11 +40,14 @@ export const Projects = () => {
                         </div>
                     </div>
                 ))}
-                <button className="button py-3  w-full text-2xl rounded-lg font-bold" onClick={handleGithub}>
-                    Voir plus
-                </button>
+
 
             </div>
+          <div className="lg:w-1/4 lg:mx-auto lg:mt-20">
+              <button className="button py-3  w-full text-2xl rounded-lg font-bold" onClick={handleGithub}>
+                  Voir plus
+              </button>
+          </div>
         </div>
     );
 
