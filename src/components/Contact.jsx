@@ -1,21 +1,20 @@
+import {SocialIcon} from "react-social-icons";
+
 export const Contact = () => {
     return (
         <>
             <div className="p-5 mt-5" id="contact">
                 <h1 className="uppercase text-3xl font-bold">Contact</h1>
                 <div>
-                    <ul className="flex flex-col gap-4 mt-5">
+                    <ul className="flex justify-evenly gap-4 mt-5">
                         <li>
-                            Email: <a href="mailto:mikeeleman@gmail.com" className="underline underline-offset-4 font-bold">mikeeleman@gmail.com</a>
+                            <SocialIcon url="mailto:contact@mikeleman.fr" bgColor="#000000" fgColor="#ffffff"/>
                         </li>
                         <li>
-                            Github: <a href="https://github.com/1ke4real" className="underline underline-offset-4 font-bold" >1ke4real</a>
+                            <SocialIcon url="https://github.com/1ke4real" bgColor="#000000" fgColor="#ffffff"/>
                         </li>
                         <li>
-                            Linkedin: <a href="https://www.linkedin.com/in/mike-leman-843298246/" className="underline underline-offset-4 font-bold">Mike Leman</a>
-                        </li>
-                        <li>
-                            Téléphone: <a href="tel:+33601177537" className="underline underline-offset-4 font-bold">06 01 17 75 37</a>
+                            <SocialIcon url="https://www.linkedin.com/in/mike-leman-843298246/" bgColor="#000000" fgColor="#ffffff"/>
                         </li>
                     </ul>
                 </div>

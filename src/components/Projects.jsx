@@ -1,6 +1,9 @@
 import {useEffect, useState} from "react";
 
 export const Projects = () => {
+    const handleGithub = () => {
+        window.location.href = "https://github.com/1ke4real";
+    }
     const [projects, setProjects] = useState([]);
     const fetchProjects = async () => {
         const req = await fetch("https://api.github.com/users/1ke4real/repos");
@@ -30,15 +33,15 @@ export const Projects = () => {
                 {projects.map((project, key) => (
                     <div key={key} className="mb-5 flex flex-col gap-4 bg-[#1A1A1A] p-3">
                         <h1 className="text-2xl font-bold">{project.name}</h1>
-                        <p className="leading-relaxed">{project.description}</p>
+                        <p className="leading-loose">{project.description}</p>
                         <div className="flex gap-4 font-light ">
                             <p>{project.language}</p>
                             <p>{project.size} MB</p>
                         </div>
                     </div>
                 ))}
-                <button className="button py-3  w-full text-2xl rounded-lg font-bold">
-                    <a href="https://github.com/1ke4real">Voir plus</a>
+                <button className="button py-3  w-full text-2xl rounded-lg font-bold" onClick={handleGithub}>
+                    Voir plus
                 </button>
 
             </div>
