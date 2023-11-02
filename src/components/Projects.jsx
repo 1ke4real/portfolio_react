@@ -30,7 +30,7 @@ export const Projects = () => {
                 {projects.map((project, key) => (
                     <div key={key} className="mb-5 flex flex-col gap-4 bg-card border-2 border-border p-3 rounded-lg lg:w-1/4">
                         <h1 className="text-2xl font-bold">{project.name}</h1>
-                        <p className="leading-loose">{project.description}</p>
+                        <p className="leading-loose text-sm">{project.description}</p>
                         <div className="flex gap-4 font-light ">
                             <p>{project.language}</p>
                             <p>{project.size} MB</p>

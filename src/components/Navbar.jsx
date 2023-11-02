@@ -5,11 +5,11 @@ import {AnimatedLogoNav} from "./AnimatedLogoNav.jsx";
 export const Navbar = () => {
     
     let Links = [
-        {name: "ACCEUIL", link: "#home"},
+        {name: "0 . ACCEUIL", link: "#home"},
         // {name: "A PROPOS", link: "#about"},
-        {name: "PROJETS", link: "#projects"},
-        {name: "COMPETENCES", link: "#skills"},
-        {name: "CONTACT", link: "#contact"},
+        {name: "1 . PROJECTS", link: "#projects"},
+        {name: "2 . SKILLS", link: "#skills"},
+        {name: "3 . CONTACT", link: "#contact"},
     ];
     let [open, setOpen] = useState(false);
 
@@ -43,7 +43,7 @@ export const Navbar = () => {
                         Links.map((link , key) => (
                             <li className='md:ml-8 md:my-0 my-7 font-semibold' key={key}>
                                 <a href={link.link}
-                                   className=' hover:text-blue-400 duration-500'>{link.name}</a>
+                                   className=' hover:text-important duration-500'>{link.name}</a>
                             </li>))
                     }
                 </ul>
