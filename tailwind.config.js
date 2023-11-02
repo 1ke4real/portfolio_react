@@ -12,7 +12,8 @@ export default {
       'text' : '#eeeeee',
       'border': '#205D9E',
       'card': '#0D2847',
-      'title' : '#70B8FF',
+      'title' : '#C2E6FF',
+      'important' : '#70B8FF',
       // 'text' : '#C2E6FF',
     }
   },

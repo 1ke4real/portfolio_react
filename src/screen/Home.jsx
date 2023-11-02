@@ -13,8 +13,8 @@ export const Home = () => {
                     <img src={profile} alt="profil" width={200} height={200}
                          className="rounded-full object-cover  mx-8"/>
                     <div className="flex flex-col gap-5 items-center justify-center lg:gap-2 lg:items-start">
-                        <h1 className="text-5xl text-center font-bold lg:text-6xl text-title">Bonjour je m'appelle <span
-                            className="text-blue-500">Mike</span></h1>
+                        <h1 className="text-5xl text-center font-bold lg:text-6xl text-important">Bonjour je m'appelle <span
+                            className="text-important">Mike</span></h1>
                         <p className="text-xl   font-light">Développeur react js et symfony</p>
                         <button className="button py-3 my-2 w-1/2 text-2xl rounded-lg font-bold lg:w-1/3" onClick={handleGotTo}>En savoir
                             plus
