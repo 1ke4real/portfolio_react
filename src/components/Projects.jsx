@@ -11,9 +11,6 @@ export const Projects = () => {
         // Filter the projects you want
         const filteredProjects = data.filter(
             (project) =>
-
-
-                project.name === "javascript_locale_storage_api" ||
                 project.name === "fake-store-react" ||
                 project.name === "movie-app" ||
                 project.name === "react-flix"
@@ -28,10 +25,10 @@ export const Projects = () => {
     console.log(projects);
     return (
         <div className="p-5 py-8 mb-8 lg:p-16" id="projects">
-            <h1 className="uppercase text-3xl font-bold my-2 mb-5 lg:text-5xl ">Projets</h1>
-            <div className="flex flex-wrap gap-4 lg:flex-nowrap lg:space-x-4">
+            <h1 className="uppercase text-3xl font-bold my-2 mb-20 lg:text-5xl text-title lg:text-center">Projets</h1>
+            <div className="flex flex-wrap gap-4 lg:flex-nowrap lg:space-x-4 lg:justify-center">
                 {projects.map((project, key) => (
-                    <div key={key} className="mb-5 flex flex-col gap-4 bg-[#1A1A1A] p-3 lg:w-1/4">
+                    <div key={key} className="mb-5 flex flex-col gap-4 bg-card border-2 border-border p-3 rounded-lg lg:w-1/4">
                         <h1 className="text-2xl font-bold">{project.name}</h1>
                         <p className="leading-loose">{project.description}</p>
                         <div className="flex gap-4 font-light ">

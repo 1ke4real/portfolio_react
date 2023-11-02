@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {},
+    colors: {
+      'background': '#0D1520',
+      'second-background': '#111927',
+      'text' : '#eeeeee',
+      'border': '#205D9E',
+      'card': '#0D2847',
+      'title' : '#70B8FF',
+      // 'text' : '#C2E6FF',
+    }
   },
   plugins: [],
 }

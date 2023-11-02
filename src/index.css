@@ -3,27 +3,35 @@
 @tailwind utilities;
 
 body{
-    background-color: #000000;
+    background-color: #0D1520;
     color: #eeeeee;
 }
+.nav{
+    z-index: 9999999;
+}
 .card {
-    background: #1A1A1A;
-    box-shadow:  27px 27px 54px #141414,
-    -27px -27px 54px #202020;
+    /*background: #0D2847;*/
+    /*box-shadow:  27px 27px 54px #141414,*/
+    /*-27px -27px 54px #202020;*/
+    background: #111927;
+    border:2px solid #205D9E;
+    border-radius: 20px;
 }
 .button {
-    background: #3B82F6;
-    box-shadow:  10px 10px 30px #326fd1,
-    -10px -10px 30px #4496ff;
-    position: relative;
-    z-index: 1;
+    /*background: #3B82F6;*/
+    /*box-shadow:  10px 10px 30px #326fd1,*/
+    /*-10px -10px 30px #4496ff;*/
+    /*position: relative;*/
+    /*z-index: 1;*/
+    border: 2px solid #104D87;
+    color: #70B8FF;
 }
-.button:hover {
-    background: #2563EB;
-    box-shadow:  10px 10px 30px #1e4bbf,
-    -10px -10px 30px #3a83ff;
-    z-index: 1;
-}
+/*.button:hover {*/
+/*    background: #2563EB;*/
+/*    box-shadow:  10px 10px 30px #1e4bbf,*/
+/*    -10px -10px 30px #3a83ff;*/
+/*    z-index: 1;*/
+/*}*/
 .navMenu{
     z-index: 999;
 }

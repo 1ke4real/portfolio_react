@@ -3,15 +3,15 @@ import {SocialIcon} from "react-social-icons";
 export const Contact = () => {
     return (
         <>
-            <div className="p-5 py-8 mb-8 lg:p-16" id="contact">
-                <h1 className="uppercase text-3xl font-bold lg:text-5xl">Contact</h1>
-                <div className="lg:flex lg:gap-10">
-                    <p className="text-lg mt-5 leading-10 lg:leading-loose lg:text-xl">
+            <div className="p-5 py-8 mb-8 lg:p-16 text-title" id="contact">
+                <h1 className="uppercase text-3xl font-bold lg:text-5xl lg:text-center">Contact</h1>
+                <div className="">
+                    <p className="text-lg mt-5 leading-10 lg:leading-loose lg:text-xl lg:text-center text-text">
                         Je suis toujours ouvert aux nouvelles opportunités passionnantes. N'hésitez pas à me contacter
                         pour discuter de projets futurs !
                     </p>
 
-                    <ul className="flex  gap-4 mt-5">
+                    <ul className="flex  gap-4 mt-5 lg:justify-center">
                         <li>
                             <SocialIcon url="mailto:contact@mikeleman.fr" bgColor="#004f9f" fgColor="#eeeeee"/>
                         </li>

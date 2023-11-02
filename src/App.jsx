@@ -19,7 +19,7 @@ function App() {
         </div>
         <Navbar/>
         <Home/>
-        <About/>
+        {/*<About/>*/}
         <Projects/>
         <Skills/>
         <Contact/>

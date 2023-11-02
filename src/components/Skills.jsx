@@ -16,12 +16,9 @@ export const Skills = () => {
     return (<>
         <div className="p-5 py-8 mb-8 lg:p-16 " id="skills">
 
-            <h1 className="uppercase text-3xl font-bold my-2 mb-5 lg:text-5xl">Compétences</h1>
-           <div className="lg:flex lg:flex-row-reverse lg:gap-10 ">
-               <p className="text-lg mt-5 leading-10 lg:leading-loose lg:text-xl lg:w-1/2">Je suis un développeur passionné et curieux qui aime explorer une multitude de technologies.
-                   Mon expertise s'étend à un large éventail de domaines, allant des fondamentaux du web aux dernières
-                   tendances technologiques. Voici quelques-unes de mes compétences clés </p>
-               <div className="my-10 flex flex-wrap gap-8 justify-evenly lg:justify-start lg:gap-10">
+            <h1 className="uppercase text-3xl font-bold my-2 mb-5 lg:text-5xl text-title lg:text-center lg:mb-20">Compétences</h1>
+           <div className="">
+               <div className="my-10 flex flex-wrap gap-8 justify-evenly lg:gap-10">
                    <AnimatedImage src={javascript} alt="javascript" width={50} height={50}/>
                    <AnimatedImage src={react} alt="react" width={50} height={50}/>
                    <AnimatedImage src={redux} alt="redux" width={50} height={50}/>
