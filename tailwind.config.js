@@ -15,6 +15,9 @@ export default {
       'title' : '#C2E6FF',
       'important' : '#70B8FF',
       // 'text' : '#C2E6FF',
+    },
+    fontFamily: {
+      display:['Popins', 'sans-serif'],
     }
   },
   plugins: [],

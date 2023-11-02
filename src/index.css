@@ -5,6 +5,7 @@
 body{
     background-color: #0D1520;
     color: #eeeeee;
+    font-family: 'Poppins', sans-serif;
 }
 .nav{
     z-index: 9999999;
